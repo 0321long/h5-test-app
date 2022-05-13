@@ -4,13 +4,14 @@
  * @Author: 
  * @Date: 2022-05-10 09:07:04
  * @LastEditors: long
- * @LastEditTime: 2022-05-10 10:12:17
+ * @LastEditTime: 2022-05-12 17:08:33
  */
 import { createApp } from 'vue';
 import App from './App.vue';
 
 import router from './router/index'
 // import './common/vant-module'
+import Card from './components/Card/index.vue'
 import { store } from "./store/index"
 import {
   Button,
@@ -94,4 +95,5 @@ app
 .use(TabbarItem)
 .use(Pagination)
 .use(Tab)
+.component('Card', Card)
 .mount('#app');
